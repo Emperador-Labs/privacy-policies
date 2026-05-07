@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Merlo TV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #B5D621, #26A32B);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; opacity: 0.85; margin-top: 0.35rem; }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1a7d1e;
+      margin: 2rem 0 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    p  { margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.4rem; }
+    li { margin-bottom: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 0.75rem 0 1rem;
+    }
+    th {
+      background: #f3f4f6;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      font-weight: 600;
+      border: 1px solid #e5e7eb;
+    }
+    td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f9fafb; }
+    .badge-no {
+      display: inline-block;
+      background: #dcfce7;
+      color: #15803d;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+    }
+    a { color: #1a7d1e; }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Merlo TV — Política de Privacidad</h1>
+  <p>Última actualización: 7 de mayo de 2026</p>
+</header>
+
+<main>
+
+  <h2>1. Información General</h2>
+  <p>
+    Esta Política de Privacidad describe cómo <strong>Merlo TV</strong> ("la App", "nosotros")
+    maneja la información cuando utilizás nuestra aplicación móvil de streaming de video en vivo,
+    disponible en Google Play Store.
+  </p>
+  <p>Al usar la App, aceptás las prácticas descritas en este documento.</p>
+
+  <h2>2. Datos que NO recopilamos</h2>
+  <p><strong>Merlo TV no recopila, almacena ni procesa datos personales de sus usuarios.</strong></p>
+  <p>La App no requiere:</p>
+  <ul>
+    <li>Registro de cuenta ni inicio de sesión</li>
+    <li>Nombre, correo electrónico ni número de teléfono</li>
+    <li>Ubicación geográfica</li>
+    <li>Información de pago</li>
+    <li>Datos biométricos</li>
+  </ul>
+
+  <h2>3. Datos técnicos de uso</h2>
+  <p>Para funcionar correctamente, la App realiza conexiones de red. Los datos técnicos involucrados son:</p>
+  <table>
+    <thead>
+      <tr><th>Dato</th><th>Propósito</th><th>¿Lo almacenamos?</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dirección IP del dispositivo</td>
+        <td>Conexión al servidor de streaming HLS</td>
+        <td><span class="badge-no">No</span></td>
+      </tr>
+      <tr>
+        <td>Solicitudes al stream de video</td>
+        <td>Reproducción del canal en vivo</td>
+        <td><span class="badge-no">No</span></td>
+      </tr>
+      <tr>
+        <td>Solicitudes a la API de metadatos</td>
+        <td>Mostrar título del programa en pantalla</td>
+        <td><span class="badge-no">No</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Estos datos son inherentes al protocolo de streaming de video en internet y
+    <strong>no son recopilados por nosotros</strong> — son gestionados directamente por
+    el servidor de transmisión del canal de TV.
+  </p>
+
+  <h2>4. Permisos del sistema</h2>
+  <table>
+    <thead>
+      <tr><th>Permiso</th><th>Razón</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>INTERNET</td><td>Conexión al stream de video en vivo</td></tr>
+      <tr><td>WAKE_LOCK</td><td>Evitar que la pantalla se apague durante la reproducción</td></tr>
+      <tr><td>FOREGROUND_SERVICE</td><td>Mantener la reproducción activa en segundo plano</td></tr>
+      <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Servicio de reproducción de medios (requerido por Android 14+)</td></tr>
+      <tr><td>POST_NOTIFICATIONS</td><td>Mostrar controles de reproducción en la barra de notificaciones</td></tr>
+    </tbody>
+  </table>
+  <p>Ninguno de estos permisos se utiliza para recopilar datos personales.</p>
+
+  <h2>5. Servicios de terceros</h2>
+  <p><strong>5.1 Google Cast (Chromecast)</strong></p>
+  <p>
+    La App incluye soporte para Google Cast. Si utilizás esta función,
+    aplica la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.
+  </p>
+
+  <p><strong>5.2 Redes sociales y enlaces externos</strong></p>
+  <p>La App contiene enlaces a perfiles externos del canal. Al hacer clic en ellos, salís de nuestra App:</p>
+  <ul>
+    <li><a href="https://instagram.com/merlotvok" target="_blank" rel="noopener">Instagram</a> — Meta Platforms, Inc.</li>
+    <li><a href="https://youtube.com/@MerloTvCanal" target="_blank" rel="noopener">YouTube</a> — Google LLC</li>
+    <li><a href="https://facebook.com/MerloTV.Merlo" target="_blank" rel="noopener">Facebook</a> — Meta Platforms, Inc.</li>
+    <li><a href="https://wa.me/5492664681048" target="_blank" rel="noopener">WhatsApp</a> — Meta Platforms, Inc.</li>
+    <li><a href="https://coopmerlosl.com.ar" target="_blank" rel="noopener">Sitio web oficial</a></li>
+  </ul>
+  <p>No tenemos control sobre los datos que esas plataformas recopilen.</p>
+
+  <p><strong>5.3 Servidor de streaming</strong></p>
+  <p>
+    El stream de video es provisto por ShockMedia (videostream.shockmedia.com.ar).
+    La conexión al stream puede registrar datos técnicos (IP, timestamp) en los
+    logs del servidor. Esto queda bajo la política de privacidad de dicho proveedor.
+  </p>
+
+  <h2>6. Privacidad de menores</h2>
+  <p>
+    La App no está dirigida a menores de 13 años ni recopila conscientemente información de menores.
+    Si sos padre/madre o tutor y creés que un menor nos proporcionó datos personales,
+    contactanos a <a href="mailto:eduardodropea@gmail.com">eduardodropea@gmail.com</a>
+    y los eliminaremos de inmediato.
+  </p>
+
+  <h2>7. Seguridad</h2>
+  <p>
+    Dado que la App no recopila ni almacena datos personales, el riesgo de exposición es mínimo.
+    Las conexiones de red utilizan <strong>HTTPS/TLS</strong> para la transmisión del stream.
+  </p>
+
+  <h2>8. Tus derechos</h2>
+  <p>De acuerdo con la Ley Argentina 25.326 y el RGPD (UE), tenés derecho a:</p>
+  <ul>
+    <li><strong>Acceso:</strong> solicitar información sobre qué datos tenemos de vos</li>
+    <li><strong>Rectificación:</strong> corregir datos inexactos</li>
+    <li><strong>Eliminación:</strong> solicitar la supresión de tus datos</li>
+    <li><strong>Oposición:</strong> oponerte al procesamiento de tus datos</li>
+  </ul>
+  <p>Para ejercer estos derechos, escribinos a <a href="mailto:eduardodropea@gmail.com">eduardodropea@gmail.com</a>.</p>
+
+  <h2>9. Cambios en esta Política</h2>
+  <p>
+    Podemos actualizar esta Política ocasionalmente. Notificaremos los cambios publicando
+    la nueva versión en esta página con la fecha de actualización.
+  </p>
+
+  <h2>10. Contacto</h2>
+  <p>
+    <strong>Responsable:</strong> Emperador Labs<br />
+    <strong>Email:</strong> <a href="mailto:eduardodropea@gmail.com">eduardodropea@gmail.com</a><br />
+    <strong>Sitio web:</strong> <a href="https://coopmerlosl.com.ar" target="_blank" rel="noopener">coopmerlosl.com.ar</a>
+  </p>
+
+</main>
+
+<footer>
+  © 2026 Emperador Labs · <a href="mailto:eduardodropea@gmail.com">eduardodropea@gmail.com</a>
+</footer>
+
+</body>
+</html>
