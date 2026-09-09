@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — App Lavadero</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #17171A, #24494e 60%, #0E717C);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; opacity: 0.85; margin-top: 0.35rem; }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0E717C;
+      margin: 2rem 0 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    p  { margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.4rem; }
+    li { margin-bottom: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 0.75rem 0 1rem;
+    }
+    th {
+      background: #f3f4f6;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      font-weight: 600;
+      border: 1px solid #e5e7eb;
+    }
+    td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f9fafb; }
+    a { color: #0E717C; }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>App Lavadero — Política de Privacidad</h1>
+  <p>Última actualización: 9 de septiembre de 2026</p>
+</header>
+
+<main>
+
+  <h2>1. Información General</h2>
+  <p>
+    <strong>App Lavadero</strong> ("la App", "el Servicio") es un sistema de gestión para lavaderos y
+    tintorerías: registra los trabajos que entran, imprime etiquetas con código QR para cada bulto,
+    controla la entrega y lleva la caja del local. Es operado por <strong>Emperador Labs</strong>.
+  </p>
+  <p>
+    Hay dos tipos de personas involucradas, y conviene distinguirlas porque no se tratan igual:
+  </p>
+  <ul>
+    <li><strong>El lavadero y su personal</strong>, que tienen una cuenta en el Servicio.</li>
+    <li><strong>Los clientes del lavadero</strong>, que dejan su ropa y nunca usan la App:
+      sus datos los carga el propio lavadero en el mostrador.</li>
+  </ul>
+  <p>
+    Respecto de los datos de sus clientes, <strong>el lavadero decide qué se carga y para qué</strong>;
+    Emperador Labs sólo los aloja y los procesa por cuenta de él para prestar el Servicio.
+  </p>
+
+  <h2>2. Datos que procesamos</h2>
+  <p><strong>De quien tiene cuenta</strong> (dueño o empleado):</p>
+  <table>
+    <thead><tr><th>Dato</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr><td>Nombre</td><td>Identificar quién hizo cada operación dentro del lavadero</td></tr>
+      <tr><td>Email</td><td>Entrar a la cuenta, invitaciones y recuperación de contraseña</td></tr>
+      <tr><td>Contraseña</td><td>Se guarda <strong>cifrada</strong> (bcrypt); nadie puede leerla, ni nosotros</td></tr>
+      <tr><td>Registro de actividad</td><td>Saber quién cobró, quién entregó y quién cambió qué</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>De los clientes del lavadero</strong>, cargados por el local:</p>
+  <table>
+    <thead><tr><th>Dato</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr><td>Nombre</td><td>Identificar de quién es cada trabajo</td></tr>
+      <tr><td>Teléfono</td><td>Avisar que el trabajo está listo y mandar el comprobante</td></tr>
+      <tr><td>Trabajos, importes y saldos</td><td>Llevar la cuenta de lo entregado, lo cobrado y lo que queda debiendo</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    <strong>No pedimos ni guardamos datos de tarjetas.</strong> La App no tiene publicidad, no usa
+    herramientas de analítica ni de seguimiento, y no vende ni cede datos a terceros con fines
+    comerciales. Tampoco recolecta ubicación, contactos, fotos ni archivos del dispositivo.
+  </p>
+
+  <h2>3. Permisos del dispositivo</h2>
+  <table>
+    <thead><tr><th>Permiso</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Cámara</strong></td>
+        <td>Leer el código QR de la etiqueta al entregar un trabajo. La imagen se procesa en el
+          momento, en el dispositivo, sólo para leer el código: <strong>no se guarda ninguna foto
+          ni se envía imagen alguna a ningún servidor</strong>. Si no das el permiso, la App sigue
+          funcionando y el trabajo se busca a mano.</td>
+      </tr>
+      <tr><td><strong>Internet</strong> y estado de la red</td><td>Comunicarse con el servidor del Servicio</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Cómo usamos los datos</h2>
+  <ul>
+    <li>Prestar el Servicio: recibir trabajos, imprimir etiquetas, entregar, cobrar y reportar.</li>
+    <li>Autenticar a cada persona y mostrarle sólo las secciones que su rol tiene habilitadas.</li>
+    <li>Facturar la suscripción del lavadero.</li>
+    <li>Mandar mails operativos: invitación a un empleado y recuperación de contraseña. No enviamos
+      publicidad.</li>
+  </ul>
+
+  <h2>5. Servicios de terceros</h2>
+  <table>
+    <thead><tr><th>Proveedor</th><th>Rol</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Mercado Pago</td>
+        <td>Cobro de la suscripción del lavadero. Los datos de pago se cargan en Mercado Pago y
+          <strong>no pasan por nuestros servidores</strong>. Ver su
+          <a href="https://www.mercadopago.com.ar/privacidad" target="_blank" rel="noopener">política de privacidad</a>.</td>
+      </tr>
+      <tr>
+        <td>Contabo</td>
+        <td>Alojamiento del servidor donde corre el Servicio y su base de datos.</td>
+      </tr>
+      <tr>
+        <td>Proveedor de correo</td>
+        <td>Entrega de los mails de invitación y recuperación de contraseña.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Conservación de los datos</h2>
+  <p>
+    Los datos se conservan mientras la cuenta del lavadero esté activa, porque son su historial de
+    trabajo. Si el lavadero da de baja la cuenta y pide el borrado, se eliminan sus datos y los de
+    sus clientes dentro de los <strong>30 días</strong>, salvo lo que haya que conservar por
+    obligación legal o contable.
+  </p>
+
+  <h2>7. Seguridad</h2>
+  <ul>
+    <li>Todo el tráfico viaja cifrado por HTTPS.</li>
+    <li>Las contraseñas se guardan con hash bcrypt, nunca en texto plano.</li>
+    <li>Cada lavadero ve únicamente sus propios datos; el aislamiento se valida en el servidor,
+      no en la App.</li>
+    <li>La base de datos no está expuesta a internet.</li>
+    <li>Cambiar la contraseña cierra las sesiones abiertas en otros dispositivos.</li>
+  </ul>
+
+  <h2>8. Tus derechos</h2>
+  <p>
+    Podés pedir acceder, corregir o eliminar tus datos, y obtener una copia de ellos, escribiendo al
+    contacto de abajo. Si sos <strong>cliente de un lavadero</strong> y querés que borren tus datos,
+    pedíselo directamente al local, que es quien los cargó y decide sobre ellos; si preferís, escribinos
+    y lo derivamos.
+  </p>
+
+  <h2>9. Privacidad de menores</h2>
+  <p>
+    El Servicio es una herramienta de trabajo para comercios y no está dirigido a menores de 18 años.
+    No recolectamos datos de menores a sabiendas.
+  </p>
+
+  <h2>10. Cambios en esta Política</h2>
+  <p>
+    Podemos actualizar esta Política ocasionalmente. Publicaremos la nueva versión en esta página con
+    su fecha de actualización.
+  </p>
+
+  <h2>11. Contacto</h2>
+  <p>
+    Emperador Labs — <a href="mailto:holzmanneduardo@gmail.com">holzmanneduardo@gmail.com</a>
+  </p>
+
+</main>
+
+<footer>
+  © 2026 Emperador Labs
+</footer>
+
+</body>
+</html>
