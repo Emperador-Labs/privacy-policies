@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — San Juan Refrigeración</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #3A1A78, #642FCD 60%, #8D2E6E);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; opacity: 0.85; margin-top: 0.35rem; }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #642FCD;
+      margin: 2rem 0 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    p  { margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.4rem; }
+    li { margin-bottom: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 0.75rem 0 1rem;
+    }
+    th {
+      background: #f3f4f6;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      font-weight: 600;
+      border: 1px solid #e5e7eb;
+    }
+    td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f9fafb; }
+    a { color: #642FCD; }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidad — San Juan Refrigeración</h1>
+    <p>Última actualización: 14 de octubre de 2026</p>
+  </header>
+
+  <main>
+    <p>
+      San Juan Refrigeración es la aplicación de los alumnos del instituto de cursos de
+      refrigeración y aire acondicionado del mismo nombre. Desde la app el alumno ve sus cursos,
+      paga sus cuotas, consulta sus notas y su asistencia y lee las novedades del instituto. Esta
+      política explica qué datos maneja la app, para qué y con quién se comparten.
+    </p>
+
+    <h2>Quién es responsable de los datos</h2>
+    <p>
+      Los datos de los alumnos son del instituto San Juan Refrigeración, que los usa para
+      administrar la cursada. Emperador Labs desarrolla y mantiene el sistema por encargo del
+      instituto y opera el servidor donde viven los datos. Consultas sobre esta política o sobre
+      los datos: <a href="mailto:holzmanneduardo@gmail.com">holzmanneduardo@gmail.com</a>.
+    </p>
+
+    <h2>Qué datos se recopilan</h2>
+    <table>
+      <tr><th>Dato</th><th>De dónde sale</th><th>Para qué</th></tr>
+      <tr>
+        <td>Nombre, apellido, correo electrónico, teléfono y DNI</td>
+        <td>Los carga el alumno al registrarse o el instituto al darlo de alta</td>
+        <td>Identificar al alumno en su legajo y poder contactarlo</td>
+      </tr>
+      <tr>
+        <td>Foto de perfil (opcional)</td>
+        <td>La elige el alumno de su teléfono</td>
+        <td>Mostrarla en su perfil dentro de la app</td>
+      </tr>
+      <tr>
+        <td>Inscripciones, cuotas y pagos</td>
+        <td>Los genera el sistema según el curso en el que está anotado</td>
+        <td>Saber qué debe, qué pagó y cuándo</td>
+      </tr>
+      <tr>
+        <td>Comprobante de transferencia (foto o PDF)</td>
+        <td>Lo sube el alumno cuando paga por transferencia</td>
+        <td>Que el instituto verifique el pago y dé la cuota por paga</td>
+      </tr>
+      <tr>
+        <td>Notas y asistencia</td>
+        <td>Las carga el instituto</td>
+        <td>Que el alumno vea su cursada</td>
+      </tr>
+    </table>
+    <p>
+      La app <strong>no</strong> recopila ubicación, contactos, mensajes, historial de navegación,
+      archivos del teléfono fuera de la imagen que el alumno elige, identificadores de publicidad
+      ni datos de otras aplicaciones. No hay publicidad ni analítica de terceros.
+    </p>
+
+    <h2>El acceso a la cuenta</h2>
+    <p>
+      El alumno entra con su correo y una contraseña, o con su cuenta de Google (y con su cuenta de
+      Apple, en iPhone). La verificación la hace <strong>Firebase Authentication</strong>, de Google
+      LLC: la contraseña la guarda ese servicio, nunca el instituto ni la app.
+    </p>
+
+    <h2>Las fotos y los archivos</h2>
+    <p>
+      La app pide elegir una imagen o un PDF del teléfono con dos fines: la foto de perfil y el
+      comprobante de pago. Se sube solo el archivo elegido, en ese momento; la app no accede al
+      resto de la galería ni a otros archivos.
+    </p>
+    <p>
+      <strong>El comprobante de transferencia es privado.</strong> Lo ven el alumno que lo subió y
+      el personal del instituto, nadie más: a cualquier otro el servidor le responde que no existe.
+    </p>
+
+    <h2>Los pagos</h2>
+    <p>
+      La cuota se paga por Mercado Pago o por transferencia bancaria. Cuando se elige Mercado Pago,
+      el pago ocurre en el sitio de <strong>Mercado Pago</strong>, bajo su propia política de
+      privacidad: la app y el instituto <strong>nunca ven ni guardan</strong> los datos de la
+      tarjeta. Del pago se guarda lo que Mercado Pago devuelve: identificador de la operación,
+      estado y monto.
+    </p>
+
+    <h2>Dónde se guardan</h2>
+    <p>
+      En un servidor propio de Emperador Labs. La comunicación entre la app y el servidor viaja
+      cifrada con HTTPS.
+    </p>
+
+    <h2>Con quién se comparten</h2>
+    <p>
+      Con nadie más que los servicios necesarios para que la app funcione: Firebase Authentication
+      (acceso a la cuenta) y Mercado Pago (cobro de la cuota). No se venden, no se ceden a terceros
+      con fines comerciales y no se usan para publicidad ni perfilado.
+    </p>
+
+    <h2>Cuánto tiempo se conservan</h2>
+    <p>
+      El legajo del alumno —inscripciones, cuotas, pagos, notas y asistencia— lo conserva el
+      instituto como registro de la cursada, de la misma forma que un libro de actas.
+    </p>
+
+    <h2>Eliminar la cuenta</h2>
+    <p>
+      El alumno puede eliminar su cuenta desde la app, en <strong>Perfil</strong>. Al hacerlo se
+      borra su acceso: deja de poder entrar, con ese correo o con cualquier otro método, y se dan de
+      baja sus inscripciones activas y las cuotas que todavía no se emitieron.
+    </p>
+    <p>
+      <strong>El historial de cursada y de pagos queda en el instituto</strong>, con el nombre del
+      alumno: es el registro de lo que efectivamente cursó y pagó, y el instituto lo necesita para
+      su administración. Si además querés pedir la baja de esos registros, el procedimiento está en
+      <a href="./eliminar-datos/">Eliminación de datos</a>.
+    </p>
+
+    <h2>Menores</h2>
+    <p>
+      Los cursos son de formación profesional para personas adultas. La app no está dirigida a
+      menores de 13 años ni recopila datos de ellos a sabiendas.
+    </p>
+
+    <h2>Cambios en esta política</h2>
+    <p>
+      Si cambia, se publica en esta misma dirección con una nueva fecha de actualización.
+    </p>
+  </main>
+
+  <footer>
+    Emperador Labs · San Juan Refrigeración
+  </footer>
+</body>
+</html>
