@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Mamina</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f8f5;
+      color: #141815;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #243D65, #2F4E7D 60%, #CD6438);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; opacity: 0.88; margin-top: 0.35rem; }
+    main { max-width: 760px; margin: 2.5rem auto; padding: 0 1.25rem 4rem; }
+    h2 {
+      font-size: 1.15rem; font-weight: 700; color: #243D65;
+      margin: 2rem 0 0.6rem; padding-bottom: 0.3rem; border-bottom: 2px solid #e2e6df;
+    }
+    p  { margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.4rem; }
+    li { margin-bottom: 0.35rem; }
+    table { width: 100%; border-collapse: collapse; margin: 0.75rem 0 1rem; font-size: 0.95rem; }
+    th, td { border: 1px solid #e2e6df; padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
+    th { background: #eef1ec; font-weight: 600; }
+    .box { background: #fff; border: 1px solid #e2e6df; border-radius: 12px; padding: 1rem 1.2rem; margin: 1rem 0; }
+    footer { text-align: center; font-size: 0.85rem; color: #5C635D; padding: 0 1.25rem 3rem; }
+    a { color: #243D65; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidad — Mamina</h1>
+    <p>App de reparto de Distribuidora Mamina y Logística · Última actualización: 18 de noviembre de 2026</p>
+  </header>
+
+  <main>
+    <p>Mamina es una aplicación de uso interno para repartidores: carga las entregas del día y
+    las ordena por el recorrido más corto. La desarrolla Emperador Labs para Distribuidora
+    Mamina y Logística.</p>
+
+    <div class="box">
+      <strong>Lo esencial:</strong> la app no tiene cuentas ni registro, y <strong>todo lo que
+      se carga queda guardado únicamente en el teléfono</strong>. No existe un servidor donde
+      se copien las entregas, los domicilios ni los nombres.
+    </div>
+
+    <h2>Qué información se guarda y dónde</h2>
+    <p>El repartidor carga las entregas del día: domicilio, y opcionalmente nombre, teléfono,
+    número de artículo y una referencia para encontrar la casa. Esa información vive en una
+    base de datos dentro del teléfono y <strong>no se envía a ningún servidor de Emperador
+    Labs ni de Distribuidora Mamina</strong>. Si la app se desinstala, se borra con ella.</p>
+
+    <h2>Ubicación del dispositivo</h2>
+    <p>La app pide acceso a la ubicación <strong>mientras se está usando</strong>, nunca en
+    segundo plano, y la usa para dos cosas: ordenar la vuelta desde donde está parado el
+    repartidor en ese momento, y mostrar en el mapa por dónde va. La ubicación se usa en el
+    teléfono; no se guarda en ningún servidor nuestro ni se comparte con fines publicitarios.</p>
+
+    <h2>Qué sale del teléfono, y hacia dónde</h2>
+    <table>
+      <tr><th>Qué viaja</th><th>A quién</th><th>Para qué</th></tr>
+      <tr>
+        <td>La dirección escrita o leída del remito</td>
+        <td>API Georef del Estado argentino (datos.gob.ar), o Google Geocoding si se elige
+        esa opción en Ajustes</td>
+        <td>Convertir la dirección en un punto del mapa</td>
+      </tr>
+      <tr>
+        <td>Las coordenadas de las paradas de la vuelta</td>
+        <td>openrouteservice (HeiGIT gGmbH, Alemania)</td>
+        <td>Dibujar el camino por las calles entre una parada y la siguiente</td>
+      </tr>
+      <tr>
+        <td>Los mapas que se ven en pantalla</td>
+        <td>Google Maps</td>
+        <td>Mostrar el mapa y las paradas sobre él</td>
+      </tr>
+      <tr>
+        <td>Informes de fallas: tipo de error, pila de llamadas, versión de la app, modelo de
+        teléfono</td>
+        <td>Firebase Crashlytics (Google)</td>
+        <td>Enterarnos de que la app se cerró y poder arreglarlo. <strong>No incluye
+        direcciones, nombres, teléfonos ni ubicaciones</strong></td>
+      </tr>
+    </table>
+    <p>No se envía nada más. No hay publicidad, no hay analítica de uso, y no se venden ni
+    ceden datos a terceros.</p>
+
+    <h2>Datos de los destinatarios</h2>
+    <p>Los domicilios, nombres y teléfonos que carga el repartidor son de los destinatarios de
+    las entregas y los administra Distribuidora Mamina y Logística, que es responsable de su
+    uso. La app sólo los guarda en el teléfono del repartidor para poder hacer el reparto del
+    día.</p>
+
+    <h2>Cuánto tiempo se conservan</h2>
+    <p>Lo cargado queda en el teléfono hasta que se borra el recorrido o se desinstala la app.
+    No hay copias en la nube: si se pierde el teléfono, esa información se pierde con él.</p>
+
+    <h2>Permisos que pide la app</h2>
+    <ul>
+      <li><strong>Ubicación</strong> (mientras se usa la app): ordenar la vuelta y seguir el
+      recorrido en el mapa.</li>
+      <li><strong>Internet y estado de la red</strong>: ubicar las direcciones y dibujar el
+      mapa.</li>
+    </ul>
+
+    <p>Cuando se toca el teléfono de una entrega, la app abre el discador del sistema con el
+    número cargado: no llama sola y no accede a la agenda de contactos.</p>
+
+    <h2>Menores</h2>
+    <p>Es una herramienta de trabajo: no está dirigida a menores de 18 años y no recoge datos
+    de ellos a sabiendas.</p>
+
+    <h2>Cambios</h2>
+    <p>Si cambia lo que la app hace con los datos, esta página se actualiza y cambia la fecha
+    de arriba.</p>
+
+    <h2>Contacto</h2>
+    <p>Emperador Labs — <a href="mailto:holzmanneduardo@gmail.com">holzmanneduardo@gmail.com</a></p>
+  </main>
+
+  <footer>Emperador Labs · Argentina</footer>
+</body>
+</html>
